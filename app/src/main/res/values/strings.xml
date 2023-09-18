@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">fundamentas4ADSM</string>
-    <string name="first_value">Teclea el primer valor</string>
-    <string name="second_value">Teclea el segundo valor</string>
-    <string name="btn_add">Sumar</string>
+    <string name="username_value">User name</string>
+    <string name="btn_login">Iniciar Seccion</string>
+    <string name="password_value" >Password</string>
+
 
 </resources>

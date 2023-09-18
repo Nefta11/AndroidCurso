@@ -10,26 +10,30 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText etValor1;
-    private EditText etValor2;
-    private Button btnAdd;
+    private EditText etUsername;
+    private EditText etPassword;
+    private Button btnLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        etValor1 = findViewById(R.id.etValor1);
-        etValor2 = findViewById(R.id.etValor2);
-        btnAdd = findViewById(R.id.btnAdd);
-        btnAdd.setOnClickListener(new View.OnClickListener() {
+        etUsername= findViewById(R.id.etUsername);
+        etPassword= findViewById(R.id.etPassword);
+        btnLogin=findViewById(R.id.btnLogin);
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int n1, n2, res;
-                n1 = Integer.parseInt(etValor1.getText().toString());
-                n2 = Integer.parseInt(etValor2.getText().toString());
-                res = n1 + n2;
-                Toast.makeText(MainActivity.this, "Resultado: " + res, Toast.LENGTH_SHORT).show();
+                String username= etUsername.getText().toString();
+                String password= etPassword.getText().toString();
+
+                if (username.equals("Neftali") && password.equals("1234"))
+                    Toast.makeText(MainActivity.this, "Welcome", Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(MainActivity.this,"Datos Erroneos", Toast.LENGTH_SHORT).show();
             }
         });
+        }
     }
-}
+
 
