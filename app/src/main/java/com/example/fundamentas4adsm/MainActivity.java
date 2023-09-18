@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 if (username.equals("Neftali") && password.equals("1234"))
                     Toast.makeText(MainActivity.this, "Welcome", Toast.LENGTH_SHORT).show();
                 else
-                    Toast.makeText(MainActivity.this,"Datos Erroneos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,"Datos Erroneos siu", Toast.LENGTH_SHORT).show();
             }
         });
         }
